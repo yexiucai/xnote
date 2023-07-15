@@ -19,17 +19,29 @@ struct CourseListView_Previews: PreviewProvider {
 
 struct ListView: View {
     @Binding var selectedItem: String?
+    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.managedObjectContext) private var context
+
+
+    @FetchRequest(
+        entity: ClassEntity.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \ClassEntity.grade, ascending: true)]
+    )
+    var classes: FetchedResults<ClassEntity>
     let items: [String] = ["一年生","二年生","三年生","四年生","五年生","六年生","中一","中二","中三","高一","高二","高三"]
+    
+    
     
     var body: some View {
         List(selection: $selectedItem) {
-            ForEach(items, id: \.self) { item in
-                NavigationLink(value: item) {
-                    Text(item)
+            ForEach(classes, id: \.self) { classEntity in
+                NavigationLink(destination: Text(classEntity.grade ?? "")) {
+                    Text(classEntity.grade ?? "")
                 }
             }
         }
     }
+    
 }
 
 

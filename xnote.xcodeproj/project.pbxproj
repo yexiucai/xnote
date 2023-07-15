@@ -10,6 +10,12 @@
 		C56AC10F2A482E6E0077D9D2 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56AC10E2A482E6E0077D9D2 /* CourseListView.swift */; };
 		C56AC1112A486E310077D9D2 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56AC1102A486E310077D9D2 /* QuestionListView.swift */; };
 		C58141892A4B16F1008F8B82 /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58141882A4B16F1008F8B82 /* QuestionDetailView.swift */; };
+		C5959E7C2A4FA53500063A85 /* CourseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5959E7A2A4FA53500063A85 /* CourseModel.xcdatamodeld */; };
+		C5959E812A4FAB0A00063A85 /* CourseEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5959E7D2A4FAB0A00063A85 /* CourseEntity+CoreDataClass.swift */; };
+		C5959E822A4FAB0A00063A85 /* CourseEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5959E7E2A4FAB0A00063A85 /* CourseEntity+CoreDataProperties.swift */; };
+		C5959E832A4FAB0A00063A85 /* ClassEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5959E7F2A4FAB0A00063A85 /* ClassEntity+CoreDataClass.swift */; };
+		C5959E842A4FAB0A00063A85 /* ClassEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5959E802A4FAB0A00063A85 /* ClassEntity+CoreDataProperties.swift */; };
+		C5959E872A4FAE5800063A85 /* CourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5959E862A4FAE5800063A85 /* CourseController.swift */; };
 		C5B4B20D2A46701E006A03CC /* xnoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4B20C2A46701E006A03CC /* xnoteApp.swift */; };
 		C5B4B20F2A46701E006A03CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4B20E2A46701E006A03CC /* ContentView.swift */; };
 		C5B4B2112A467021006A03CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B4B2102A467021006A03CC /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 		C56AC10E2A482E6E0077D9D2 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		C56AC1102A486E310077D9D2 /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 		C58141882A4B16F1008F8B82 /* QuestionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
+		C5959E7B2A4FA53500063A85 /* CourseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CourseModel.xcdatamodel; sourceTree = "<group>"; };
+		C5959E7D2A4FAB0A00063A85 /* CourseEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C5959E7E2A4FAB0A00063A85 /* CourseEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5959E7F2A4FAB0A00063A85 /* ClassEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C5959E802A4FAB0A00063A85 /* ClassEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5959E862A4FAE5800063A85 /* CourseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseController.swift; sourceTree = "<group>"; };
 		C5B4B2092A46701E006A03CC /* xnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B4B20C2A46701E006A03CC /* xnoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xnoteApp.swift; sourceTree = "<group>"; };
 		C5B4B20E2A46701E006A03CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +89,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5959E722A4F170A00063A85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C58141882A4B16F1008F8B82 /* QuestionDetailView.swift */,
+				C56AC1102A486E310077D9D2 /* QuestionListView.swift */,
+				C56AC10E2A482E6E0077D9D2 /* CourseListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5959E732A4F179300063A85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5959E7E2A4FAB0A00063A85 /* CourseEntity+CoreDataProperties.swift */,
+				C5959E7D2A4FAB0A00063A85 /* CourseEntity+CoreDataClass.swift */,
+				C5959E7F2A4FAB0A00063A85 /* ClassEntity+CoreDataClass.swift */,
+				C5959E802A4FAB0A00063A85 /* ClassEntity+CoreDataProperties.swift */,
+				C5959E7A2A4FA53500063A85 /* CourseModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5959E852A4FAE0600063A85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5959E862A4FAE5800063A85 /* CourseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C5B4B2002A46701D006A03CC = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +144,9 @@
 			children = (
 				C5B4B20C2A46701E006A03CC /* xnoteApp.swift */,
 				C5B4B20E2A46701E006A03CC /* ContentView.swift */,
-				C58141882A4B16F1008F8B82 /* QuestionDetailView.swift */,
-				C56AC1102A486E310077D9D2 /* QuestionListView.swift */,
-				C56AC10E2A482E6E0077D9D2 /* CourseListView.swift */,
+				C5959E852A4FAE0600063A85 /* Controller */,
+				C5959E732A4F179300063A85 /* Model */,
+				C5959E722A4F170A00063A85 /* View */,
 				C5B4B2102A467021006A03CC /* Assets.xcassets */,
 				C5B4B2122A467021006A03CC /* Preview Content */,
 			);
@@ -267,10 +309,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58141892A4B16F1008F8B82 /* QuestionDetailView.swift in Sources */,
+				C5959E822A4FAB0A00063A85 /* CourseEntity+CoreDataProperties.swift in Sources */,
 				C56AC1112A486E310077D9D2 /* QuestionListView.swift in Sources */,
 				C56AC10F2A482E6E0077D9D2 /* CourseListView.swift in Sources */,
 				C5B4B20F2A46701E006A03CC /* ContentView.swift in Sources */,
+				C5959E842A4FAB0A00063A85 /* ClassEntity+CoreDataProperties.swift in Sources */,
+				C5959E812A4FAB0A00063A85 /* CourseEntity+CoreDataClass.swift in Sources */,
+				C5959E7C2A4FA53500063A85 /* CourseModel.xcdatamodeld in Sources */,
+				C5959E832A4FAB0A00063A85 /* ClassEntity+CoreDataClass.swift in Sources */,
 				C5B4B20D2A46701E006A03CC /* xnoteApp.swift in Sources */,
+				C5959E872A4FAE5800063A85 /* CourseController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +637,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5959E7A2A4FA53500063A85 /* CourseModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5959E7B2A4FA53500063A85 /* CourseModel.xcdatamodel */,
+			);
+			currentVersion = C5959E7B2A4FA53500063A85 /* CourseModel.xcdatamodel */;
+			path = CourseModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C5B4B2012A46701D006A03CC /* Project object */;
 }

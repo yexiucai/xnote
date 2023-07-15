@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct xnoteApp: App {
+    private let persistence = CourseController.shared
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistence.persistentContainer.viewContext)
+
         }
     }
+    
 }
